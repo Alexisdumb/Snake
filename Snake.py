@@ -48,4 +48,15 @@ class Food:
        return True
     else:
        return False
+             
+ class Game:
+    def __init__ (self):
+      self.screen.onkey(lambda: self.snake.set_direction("Up"), "Up")
+      self.screen.onkey(lambda: self.snake.set_direction("Left"), "Left")
+      self.screen.onkey(lambda: self.snake.set_direction("Down"), "Down")
+      self.screen.onkey(lambda: self.snake.set_direction("Right"), "Right")
+      self.screen.listen()
   
+     game = Game()
+      
+
