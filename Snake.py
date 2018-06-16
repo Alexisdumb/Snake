@@ -35,6 +35,10 @@ class Cell:
     
 class Food:
   def __init__ (self):
+    self.t=turtle.Turtle()
+    self.t.hidetrurle()
+    self.t.speed(0)
+    self.cell=Cell(self.t)
   def random_food(self):
     self.cell.x=random.randint(-200,200)
     self.cell.y=random.randint(-200,200)
